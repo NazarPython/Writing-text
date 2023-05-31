@@ -1,0 +1,30 @@
+# Writing-text
+from tkinter import *
+import time
+window = Tk()
+window.title("Mr.Robot")
+window.geometry("340x440")
+def a() :
+    aa = entry.get()
+    print(aa)
+def d() :
+    entry.delete(0, END)
+entry = Entry(window, font = ("Comic Sans MS", 25), fg = "green",bg = "black")
+entry.pack()
+entry.place(x = 0, y = 100)
+window.config(background="black", )
+
+button = Button(window, text = "write",command = a ,font = ("Comic Sans MS", 15, "bold"),fg = "white", bg = "black")
+button.pack()
+button.place(x = 100, y = 170)
+
+button = Button(window, text = "delete",command = d ,font = ("Comic Sans MS", 15, "bold"),fg = "white", bg = "black")
+button.pack()
+button.place(x = 180, y = 170)
+
+label = Label(window, text = "Write something", font = ("Comic Sans MS", 25, "bold"), fg = "white", bg = "black")
+label.pack()
+label = Label(window, text = "Use this thing bellow", font = ("Comic Sans MS", 15, "bold"), fg = "white", bg = "black")
+label.pack()
+label.place(x= 60, y = 60)
+window.mainloop()
